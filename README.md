@@ -26,4 +26,4 @@ Este projeto utiliza a fonte externa chamada "Poppins". Caso a fonte-padrão do 
 
 ## Documentação completa
 
-A documentação completa pode ser lida [neste link](https://siaelalves.notion.site/Key-Detector-138dd690501080ce9135de5a0d62aba0?pvs=4)
+A documentação completa, com explicação de cada uma das funções e linhas código pode ser lida [neste link](https://siaelalves.notion.site/Key-Detector-138dd690501080ce9135de5a0d62aba0?pvs=4) (Caderno do Notion).
