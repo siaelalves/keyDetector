@@ -1,0 +1,88 @@
+:root{
+ --color-primary:#4b4b4b;
+ --color-secondary:#ffffff;
+ --key-pressed-text-font-size:48pt;
+ --key-list-padding:8pt;
+}
+
+*{
+ font-family:"Poppins";
+}
+html{
+ height:100%;
+}
+body{
+ min-height:100%;
+ margin:0;
+ display:flex;
+ flex-direction:column;
+ flex-wrap:nowrap;
+ justify-content:flex-start;
+ align-items:center;
+ row-gap:32pt;
+}
+h1{
+ color:var(--color-primary);
+ font-size:64pt;
+ margin:0;
+ text-align:center;
+}
+
+.commands{
+ width:100%;
+ text-align:center;
+
+ .resetButton, .reloadButton{
+  background-color:var(--color-primary);
+  color:var(--color-secondary);
+  font-size:16pt;
+  box-shadow:none;
+  padding:8pt 32pt;
+  cursor:pointer;
+
+  border-width:2pt;
+  border-style:solid;
+  border-color:var(--color-primary);
+  border-radius:12pt;
+
+  &:active{
+   background-color:var(--color-secondary);
+   color:var(--color-primary);
+  }
+ }
+
+}
+
+.keyList{
+ width:calc(100% - (var(--key-list-padding) * 2));
+ min-height:82pt;
+ padding:8pt;
+
+ display:flex;
+ flex-direction:column;
+ flex-wrap:nowrap;
+ justify-content:center;
+ align-items:center;
+ 
+ background-color:var(--color-primary);
+ border-radius:12pt;
+
+ .code{
+  opacity:1;
+  transition:opacity 0.5s ease;
+  animation:blink 0.75s linear alternate infinite;
+
+  &.placeholder{
+   font-size:var(--key-pressed-text-font-size);
+   color:var(--color-secondary);
+   text-align:center;
+  }
+
+ }
+
+}
+
+@keyframes blink {
+ 0%{opacity:0;}
+ 100%{opacity:1;}
+}
