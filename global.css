@@ -4,7 +4,7 @@
  --key-pressed-text-font-size:48pt;
  --key-list-padding:8pt;
  --default-cursor:url("cursor-default.svg"), auto;
- --select-cursor:url("cursor-select.svg.svg"), auto;
+ --select-cursor:url("cursor-select.svg"), auto;
  --text-cursor:url("cursor-text.svg"), auto;
 }
 
